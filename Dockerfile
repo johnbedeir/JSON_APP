@@ -1,4 +1,6 @@
 FROM python:3
-RUN mkdir /app
-COPY . /app
-CMD ["python3","/app/app.py"]
+
+MAINTAINER "john.bedeir@gmail.com"
+
+COPY ./APP /home
+#CMD ["python3","/app/APP/app.py"]
