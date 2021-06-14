@@ -275,3 +275,4 @@ xmltojson==0.2.0
 yapf==0.31.0
 zipp==1.0.0
 pytest
+requests
