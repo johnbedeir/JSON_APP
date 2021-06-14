@@ -5,7 +5,6 @@ aniso8601==9.0.1
 ansible==2.9.6
 apache-libcloud==2.8.0
 appdirs==1.4.4
-apturl==0.5.2
 argcomplete==1.8.1
 arrow==1.1.0
 astroid==2.5.6
