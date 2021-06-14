@@ -23,7 +23,6 @@ bleach==3.3.0
 blinker==1.4
 blis==0.7.4
 bokeh==2.3.2
-Brlapi==0.7.0
 bs4==0.0.1
 cached-property==1.5.1
 cachetools==4.2.2
