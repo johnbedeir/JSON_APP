@@ -1,0 +1,22 @@
+---
+- name: "Build a container with ansible"
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: stop current running container
+      command: docker stop json-app-container
+      ignore_errors: yes
+
+    - name: remove stopped container
+      command: docker rm json-app-container
+      ignore_errors: yes
+
+    - name: remove json-app-image
+      command: docker rmi json-app-image
+      ignore_errors: yes
+
+    - name: build docker image using the Dockerfile
+      command: docker build -t json-app-image .
+
+    - name: create container using my-project-image
+      command: docker run -d --name json-app-container json-app-image
